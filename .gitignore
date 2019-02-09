@@ -1,0 +1,13 @@
+# virtualenv
+venv
+env
+
+# log files
+.log
+
+# editor junk
+.idea/
+
+# python
+*.py[c]
+*.pytest_cache
