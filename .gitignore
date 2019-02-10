@@ -11,3 +11,7 @@ env
 # python
 *.py[c]
 *.pytest_cache
+
+# build
+build
+dist
