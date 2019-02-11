@@ -2,7 +2,6 @@ import logging
 import logging.handlers
 import colorlog
 import os
-import sys
 from base_logger import BaseLogger
 
 
@@ -12,7 +11,7 @@ class FileLogger(BaseLogger):
     It uses colorlog formatter to color code log messages for different log levels.
 
     Parameters
-    ---------
+    ----------
     name : `string`, `optional`
          Name of the logger.
     log_level : `string`, `optional`
@@ -25,6 +24,7 @@ class FileLogger(BaseLogger):
          If not specified, then it will use a file_name { name }.log. If name is none then the log file will be app.log
     log_dir : `string`, `optional`
          The directory where the log_file is created. If not specified, then log_file will be created in the current directory.
+
     Examples
     --------
     >>> logger = FileLogger(log_file='test.log', log_dir='/tmp')
