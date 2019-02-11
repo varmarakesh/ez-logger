@@ -1,8 +1,4 @@
 import logging
-import logging.handlers
-import colorlog
-import os
-import sys
 from base_logger import BaseLogger
 
 
@@ -12,7 +8,7 @@ class ConsoleLogger(BaseLogger):
     It uses colorlog formatter to color code log messages for different log levels.
 
     Parameters
-    ---------
+    ----------
     name : `string`, `optional`
          Name of the logger.
     log_level : `string`, `optional`

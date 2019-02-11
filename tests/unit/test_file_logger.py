@@ -1,4 +1,4 @@
-from simple_logger.file_logger import FileLogger
+from ez_logger.file_logger import FileLogger
 import unittest
 import glob
 import os

@@ -1,12 +1,12 @@
 import unittest
 from subprocess import call, check_output, Popen, PIPE
-from simple_logger.console_logger import ConsoleLogger
+from ez_logger.console_logger import ConsoleLogger
 
 
 class TestConsoleLogger(unittest.TestCase):
 
     def setUp(self):
-        self.base_python_statement = "import sys;from simple_logger.console_logger import ConsoleLogger;cl=ConsoleLogger();"
+        self.base_python_statement = "import sys;from ez_logger.console_logger import ConsoleLogger;cl=ConsoleLogger();"
 
     def test_info(self):
         info_log_statement = self.base_python_statement + "cl.info('info');sys.exit(0);"

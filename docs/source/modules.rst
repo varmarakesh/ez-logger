@@ -1,7 +1,7 @@
-simple_logger
+ez_logger
 =============
 
 .. toctree::
    :maxdepth: 4
 
-   simple_logger
+   ez_logger

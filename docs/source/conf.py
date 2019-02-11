@@ -19,7 +19,7 @@ sys.path.insert(0, os.path.abspath('../..'))
 
 # -- Project information -----------------------------------------------------
 
-project = u'simple-logger'
+project = u'ez-logger'
 copyright = u'2019, Rakesh V'
 author = u'Rakesh V'
 
@@ -102,7 +102,7 @@ html_static_path = ['_static']
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'simple-loggerdoc'
+htmlhelp_basename = 'ez-loggerdoc'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -129,7 +129,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'simple-logger.tex', u'simple-logger Documentation',
+    (master_doc, 'ez-logger.tex', u'ez-logger Documentation',
      u'Rakesh V', 'manual'),
 ]
 
@@ -139,7 +139,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'simple-logger', u'simple-logger Documentation',
+    (master_doc, 'ez-logger', u'ez-logger Documentation',
      [author], 1)
 ]
 
@@ -150,8 +150,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'simple-logger', u'simple-logger Documentation',
-     author, 'simple-logger', 'One line description of project.',
+    (master_doc, 'ez-logger', u'ez-logger Documentation',
+     author, 'ez-logger', 'One line description of project.',
      'Miscellaneous'),
 ]
 

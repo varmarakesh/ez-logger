@@ -1,18 +1,16 @@
 import logging
-import logging.handlers
 import colorlog
-import os
-import sys
 
 
 class BaseLogger(object):
     """
-    BaseLogger is the parent class, that encapsulates the common functionality for different kinds
-    of loggers.
+    BaseLogger is the parent class, that encapsulates the common functionality
+    for different kinds of loggers.
 
     ConsoleLogger and FileLogger descend from BaseLogger
 
-    Don't create BaseLogger objects. It is an abstract class. Use ConsoleLogger or FileLogger.
+    Don't create BaseLogger objects. It is an abstract class. Use ConsoleLogger
+    or FileLogger.
     """
 
     def __init__(self, name, log_level):
@@ -49,41 +47,43 @@ class BaseLogger(object):
 
     def __getLogger(self):
         """
-        Returns the logger object. This method needs to be implemented by the
-        child class
+        Returns the logger object. This method needs to be implemented
+        by the child class
         """
         pass
 
     def info(self, message):
         """
-        Writes info messages, these messages will only be written if log_level is set to
-        debug or info.
+        Writes info messages, these messages will only be written if
+        log_level is set to debug or info.
         """
         self.logger.info(message)
 
     def error(self, message):
         """
-        Writes error messages, these messages will only be written if log_level is set to
-        debug, info, warning or error.
+        Writes error messages, these messages will only be written if
+        log_level is set to debug, info, warning or error.
         """
         self.logger.error(message)
 
     def warning(self, message):
         """
-        Writes warning messages, these messages will only be written if log_level is set to
-        debug, info or warning.
+        Writes warning messages, these messages will only be written
+        if log_level is set to debug, info or warning.
         """
         self.logger.warning(message)
 
     def critical(self, message):
         """
-        Writes error messages, these messages will be written regardless of the log_level (it could
-        be set to debug, info, warning, error or critical).
+        Writes error messages, these messages will be written
+        regardless of the log_level (it could be set to debug,
+        info, warning, error or critical).
         """
         self.logger.critical(message)
 
     def debug(self, message):
         """
-        Writes debug messages, these messages will only be written if log_level is set to debug.
+        Writes debug messages, these messages will only be written
+        if log_level is set to debug.
         """
         self.logger.debug(message)

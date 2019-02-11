@@ -1,29 +1,29 @@
-simple\_logger package
+ez\_logger package
 ======================
 
 Submodules
 ----------
 
-simple\_logger.base\_logger module
+ez\_logger.base\_logger module
 ----------------------------------
 
-.. automodule:: simple_logger.base_logger
+.. automodule:: ez_logger.base_logger
     :members:
     :undoc-members:
     :show-inheritance:
 
-simple\_logger.console\_logger module
+ez\_logger.console\_logger module
 -------------------------------------
 
-.. automodule:: simple_logger.console_logger
+.. automodule:: ez_logger.console_logger
     :members:
     :undoc-members:
     :show-inheritance:
 
-simple\_logger.file\_logger module
+ez\_logger.file\_logger module
 ----------------------------------
 
-.. automodule:: simple_logger.file_logger
+.. automodule:: ez_logger.file_logger
     :members:
     :undoc-members:
     :show-inheritance:
@@ -32,7 +32,7 @@ simple\_logger.file\_logger module
 Module contents
 ---------------
 
-.. automodule:: simple_logger
+.. automodule:: ez_logger
     :members:
     :undoc-members:
     :show-inheritance:
