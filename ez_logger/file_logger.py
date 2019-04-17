@@ -78,6 +78,11 @@ class FileLogger(BaseLogger):
         # Set the log level
         logger.setLevel(self._get_log_level())
 
+        # Remove if any loggers already exist. Logger is a singleton, so even if separate logger
+        # are created, the handlers get appended.
+        while len(logger.handlers) > 0:
+            logger.handlers.pop()
+
         # Add file handler
         logger.addHandler(self.__get_file_handler())
 
