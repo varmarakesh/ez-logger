@@ -46,5 +46,5 @@ Run Tests
 --
 
 ```bash
-python -m pytest -v tests/unit/*.py
+python -m pytest -v tests/unit/*.py --spec
 ```
