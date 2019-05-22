@@ -2,7 +2,7 @@ import logging
 import logging.handlers
 import colorlog
 import os
-from base_logger import BaseLogger
+from ez_logger.base_logger import BaseLogger
 
 
 class FileLogger(BaseLogger):

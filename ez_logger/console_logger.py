@@ -1,5 +1,5 @@
 import logging
-from base_logger import BaseLogger
+from ez_logger.base_logger import BaseLogger
 
 
 class ConsoleLogger(BaseLogger):
