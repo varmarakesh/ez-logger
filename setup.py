@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 from codecs import open
 from os import path
 
-__version__ = '1.0.0'
+__version__ = '1.0.2'
 
 here = path.abspath(path.dirname(__file__))
 
@@ -26,12 +26,14 @@ setup(
     long_description_content_type='text/markdown',
     license='BSD',
     classifiers=[
-      'Development Status :: 5 - Production/Stable',
-      'Intended Audience :: Developers',
-      'Operating System :: MacOS :: MacOS X',
-      'Operating System :: Microsoft :: Windows',
-      'Operating System :: POSIX',
-      'Programming Language :: Python',
+        'Development Status :: 5 - Production/Stable',
+        'Intended Audience :: Developers',
+        'Operating System :: MacOS :: MacOS X',
+        'Operating System :: Microsoft :: Windows',
+        'Operating System :: POSIX',
+        'Programming Language :: Python',
+        'Programming Language :: Python :: 2',
+        'Programming Language :: Python :: 2.7',
     ],
     keywords='',
     packages=find_packages(exclude=['docs', 'tests*', '.idea']),

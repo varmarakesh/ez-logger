@@ -3,6 +3,16 @@ ez-logger
 
 `ez-logger` is a python module that offers easy to use API's for performing common logging operations.
 
+This library has been tested on the following platforms.
+* Windows
+* Linux
+* Mac OSX
+
+It also works on both python major versions.
+
+* python 2.7
+* python 3.6
+
 API Docs
 --
 

@@ -50,6 +50,14 @@ class TestFileLogger(unittest.TestCase):
         )
         os.remove('/tmp/test1.log')
 
+    def test_file_logger_log_file_directory_bad_path(self):
+        logger = FileLogger(name='test', log_file='test3.log', log_dir='/tmp/1234', console_logging=False)
+        logger.info('hello')
+        file_content = open("test3.log").read()
+        self.assertTrue(
+            file_content.find('hello') != -1
+        )
+
     def test_file_logger_error_level(self):
         logger = FileLogger(log_level='error')
         logger.error('hello')
