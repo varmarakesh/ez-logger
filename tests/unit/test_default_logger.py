@@ -10,3 +10,6 @@ class TestDefaultLogger(unittest.TestCase):
     def test_default_logger(self):
         logger = DefaultLogger()
         self.assertIsNotNone(logger.logger)
+
+    def tearDown(self):
+        pass
