@@ -30,10 +30,10 @@ setup(
         'Intended Audience :: Developers',
         'Operating System :: MacOS :: MacOS X',
         'Operating System :: Microsoft :: Windows',
-        'Operating System :: POSIX',
-        'Programming Language :: Python',
-        'Programming Language :: Python :: 2',
+        'Operating System :: POSIX :: Linux',
         'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: Implementation :: CPython'
     ],
     keywords='',
     packages=find_packages(exclude=['docs', 'tests*', '.idea']),

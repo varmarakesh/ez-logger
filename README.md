@@ -1,5 +1,7 @@
 [![Documentation Status](https://readthedocs.org/projects/ez-logger/badge/?version=latest)](https://ez-logger.readthedocs.io/en/latest/?badge=latest)
 [![Pipeline Status](https://gitlab.com/varmarakesh/simple-logger/badges/master/pipeline.svg)](https://gitlab.com/varmarakesh/simple-logger/pipelines)
+[![PyPI](https://img.shields.io/pypi/v/ez-logger.svg)](https://pypi.org/project/ez-logger/)
+[![PyPI](https://img.shields.io/pypi/l/ez-logger.svg)](https://pypi.org/project/ez-logger/)
 
 ez-logger 
 ==
