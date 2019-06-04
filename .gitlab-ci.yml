@@ -1,9 +1,16 @@
 stages:
-  - unit-test
+  - test
 
-unittests:
+test-python27:
   image: python:2.7-alpine # python image comes with pip
-  stage: unit-test
+  stage: test
+  script:
+    - pip install -r requirements.txt
+    - python -m pytest -v tests/unit/*.py
+
+test-python36:
+  image: python:3.6-alpine # python image comes with pip
+  stage: test
   script:
     - pip install -r requirements.txt
     - python -m pytest -v tests/unit/*.py

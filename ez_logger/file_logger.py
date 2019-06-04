@@ -74,8 +74,10 @@ class FileLogger(BaseLogger):
                 # if self.log_dir does not exist or has write access.
                 # then display a console warning.
                 console_logger = ConsoleLogger()
-                console_logger.warning('Log directory {0} does not exist or user does not have write permission.'
-                                       'So creating the log file in the local directory.')
+                console_logger.warning(
+                    'Log directory {0} does not exist or user does not have write permission. '
+                    'So creating the log file in the local directory.'.format(self.log_dir)
+                )
         return logfile
 
     def __get_file_handler(self):
