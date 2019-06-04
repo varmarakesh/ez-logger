@@ -1,4 +1,7 @@
-ez-logger
+[![Documentation Status](https://readthedocs.org/projects/ez-logger/badge/?version=latest)](https://ez-logger.readthedocs.io/en/latest/?badge=latest)
+[![Pipeline Status](https://gitlab.com/varmarakesh/simple-logger/badges/master/pipeline.svg)](https://gitlab.com/varmarakesh/simple-logger/pipelines)
+
+ez-logger 
 ==
 
 `ez-logger` is a python module that offers easy to use API's for performing common logging operations.
