@@ -28,6 +28,14 @@ ez\_logger.file\_logger module
     :undoc-members:
     :show-inheritance:
 
+ez\_logger.tenant\_logger module
+----------------------------------
+
+.. automodule:: ez_logger.tenant_logger
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
 
 Module contents
 ---------------
