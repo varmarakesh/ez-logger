@@ -10,7 +10,7 @@ class BaseLogger(object):
     ConsoleLogger and FileLogger descend from BaseLogger
 
     Don't create BaseLogger objects. It is an abstract class. Use ConsoleLogger
-    or FileLogger.
+    or FileLogger or TenantLogger.
     """
 
     def __init__(self, name, log_level):
@@ -50,7 +50,7 @@ class BaseLogger(object):
         Returns the logger object. This method needs to be implemented
         by the child class
         """
-        pass
+        raise NotImplementedError
 
     def info(self, message):
         """

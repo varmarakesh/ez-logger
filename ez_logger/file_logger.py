@@ -30,6 +30,7 @@ class FileLogger(BaseLogger):
     Examples
     --------
     >>> logger = FileLogger(log_file='test.log', log_dir='/tmp')
+    >>> logger.info(message='process started')
     """
 
     def __init__(self, console_logging=True, log_level='info', name=None, log_file=None,
@@ -43,7 +44,7 @@ class FileLogger(BaseLogger):
         self.log_dir = log_dir
 
         # set the logger
-        self.logger = self._getLogger()
+        self.logger = self.__getLogger()
 
     def __check_dir(self, dir_path):
         dummypath = os.path.join(dir_path, str(uuid.uuid4()))
@@ -80,19 +81,30 @@ class FileLogger(BaseLogger):
                 )
         return logfile
 
+    def _get_file_formatter(self):
+        """
+        _get_file_formatter indicates how the log file record should be formatted
+        It can be overridden by the child class
+        :return:
+        """
+        return '%(log_color)s%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+
     def __get_file_handler(self):
+        """
+        __get_file_handler creates the RotatingFileHandler.
+        """
         file_handler = logging.handlers.RotatingFileHandler(
             self.__getLogfile(),
             maxBytes=5 * 1024 * 1024,
             backupCount=2
         )
         file_formatter = colorlog.ColoredFormatter(
-            '%(log_color)s%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+            self._get_file_formatter()
         )
         file_handler.setFormatter(file_formatter)
         return file_handler
 
-    def _getLogger(self):
+    def __getLogger(self):
         # Create a logger object
         logger = logging.getLogger(
             name=self._get_logger_name()

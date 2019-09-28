@@ -18,6 +18,7 @@ class ConsoleLogger(BaseLogger):
     Examples
     --------
     >>> logger = ConsoleLogger()
+    >>> logger.info(message='process started')
     """
 
     def __init__(self, name=None, log_level='info'):

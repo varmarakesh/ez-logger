@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 from codecs import open
 from os import path
 
-__version__ = '1.0.2'
+__version__ = '1.1.10'
 
 here = path.abspath(path.dirname(__file__))
 
@@ -21,7 +21,7 @@ dependency_links = [x.strip().replace('git+', '') for x in all_reqs if x.startsw
 setup(
     name='ez-logger',
     version=__version__,
-    description='ez-logger allows you to create commonly used logger for everyday operations',
+    description='ez-logger allows you to a logger for everyday operations',
     long_description=long_description,
     long_description_content_type='text/markdown',
     license='BSD',
